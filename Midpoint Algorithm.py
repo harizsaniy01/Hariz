@@ -1,3 +1,7 @@
+import streamlit as st
+import numpy as np
+import pandas as pd
+import seaborn as sns
 import matplotlib.pyplot as plt
 
 def midpoint(x1, y1, x2, y2):
@@ -9,7 +13,7 @@ def midpoint(x1, y1, x2, y2):
     x = x1
     y = y1
 
-    print(f"X = {x}, Y = {y}")
+    print(f"X = {x}, Y = {y}")https://github.com/harizsaniy01/Hariz/blob/main/Midpoint%20Algorithm.py
 
     # Initialize the plotting points
     xcoordinates = [x]
