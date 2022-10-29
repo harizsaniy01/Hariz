@@ -1,7 +1,4 @@
 import matplotlib.pyplot as plt
-plt.title("Midpoint Line Algorithm")
-plt.xlabel("X Axis")
-plt.ylabel("Y Axis")
 
 def midpoint(x1, y1, x2, y2):
     dx = x2 - x1
@@ -32,10 +29,16 @@ def midpoint(x1, y1, x2, y2):
 
         xcoordinates.append(x)
         ycoordinates.append(y)
-        print(f"X = {x}, Y = {y}")
+        st.header(f"X = {x}, Y = {y}")
+        
+    fig = plt.figure(figsize=(10, 4))
+    plt.title("Midpoint Line Algorithm")
+    plt.xlabel("X Axis")
+    plt.ylabel("Y Axis")
     plt.plot(xcoordinates, ycoordinates)
     plt.show()
-
+    st.pyplot(fig)
+    
 if __name__=="__main__":
     x1 = int(input("Enter the Starting Point of X: "))
     y1 = int(input("Enter the Starting Point of Y: "))
