@@ -1,3 +1,7 @@
+import streamlit as st
+import numpy as np
+import pandas as pd
+import seaborn as sns
 import matplotlib.pyplot as plt
 print("Enter the Value of X1: ")
 x1 = int(input())
